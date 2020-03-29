@@ -5,7 +5,7 @@ using UnityEngine;
 public class ObjectD : MonoBehaviour {
 
    
-    GameObject unitychan;
+    GameObject mainCamera;
 
 	// Use this for initialization
 	void Start () {
@@ -13,12 +13,12 @@ public class ObjectD : MonoBehaviour {
 
     
        
-        unitychan = GameObject.Find("unitychan");
+        mainCamera = GameObject.Find("MainCamera");
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if (this.gameObject.transform.position.z < unitychan.transform.position.z)
+        if (this.gameObject.transform.position.z < mainCamera.transform.position.z)
         {
          
 
